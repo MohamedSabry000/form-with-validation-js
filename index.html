@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo 1</title>
+    <!-- Start Bootstrap CSS Import -->
+    <!-- <link rel="stylesheet" href="./css/bootstrap.min.css" /> -->
+    <!-- End Bootstrap CSS Import -->
+
+    <!-- Start Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/earth.css" />
+    <!-- Start Custom CSS -->
+</head>
+<body id="task2">
+
+
+    <form id="form" class="form">
+        <div class="field">
+            <div class="w-15">
+                <label for="name">Name</label>
+            </div>
+            <div class="w-85">
+                <input class="w-100 pd-10" id="name" name="name" type="text" required/>
+            </div>
+            <div id="name-error" class="err"> this is required </div>
+        </div>
+        <div class="field">
+            <div class="w-15">
+                <label for="e-mail">Email</label>
+            </div>
+            <div class="w-85">
+                <input class="w-100 pd-10" id="e-mail" name="e-mail" type="email" />
+            </div>
+            <div id="e-mail-error" class="err">Email isn't valid</div>
+        </div>
+        <div class="field">
+            <div class="w-15">
+                <label for="pass">Password</label>
+            </div>
+            <div class="w-80">
+                <input  class="w-100 pd-10" id="pass" name="pass" type="password" />
+            </div>
+            <div class="w-5">
+                <button id="toggleShowPass"  type="button"><img src="./img/eye2.png" alt=""></button>
+            </div>
+            <div id="pass-error" class="err">Password must be 8 chars at least.</div>
+        </div>
+        <div class="field">
+            <div class="w-15">
+                <label for="gender">Gender</label>
+            </div>
+            <div class="w-85">
+                <div>
+                    <input id="gender" name="gender" type="radio" value="male" /> Male
+                </div>
+                <div>
+                    <input name="gender" type="radio" value="female" /> Female
+                </div>
+            </div>
+            <div id="gender-error" class="err">Please select your gender.</div>
+        </div>
+        <div class="field">
+            <div class="w-15">
+                <label for="sports">Sports</label>
+            </div>
+            <div class="w-85">
+                <div>
+                    <input id="sports" name="sports" type="checkbox" value="T"/> Tennis
+                </div>
+                <div>
+                    <input name="sports" type="checkbox" value="R"/> Running
+                </div>
+                <div>
+                    <input name="sports" type="checkbox" value="F"/> Football
+                </div>
+            </div>
+            <div id="sports-error" class="err">Please select at least two sports.</div>
+        </div>
+        <div class="field">
+            <div class="w-15">
+                <label for="country">Country</label>
+            </div>
+            <div class="w-85">
+                <div class="w-100 pd-10">
+                    <select class="w-100 pd-10" name="country" id="country">
+                        <option value="" selected>---</option>
+                        <option value="EG">Egypt</option>
+                        <option value="US">United State</option>
+                        <option value="SA">Saudi Aribia</option>
+                    </select>
+                </div>
+            </div>
+            <div id="country-error" class="err">Please select your country</div>
+        </div>
+        <div class="button-collection">
+            <button id="submit">Submit</button>
+            <button id="reset" type="reset">Reset</button>
+        </div>
+        <div id="cong">
+            <h2>Congratulation</h2>
+        </div>
+    </form>
+
+    
+
+    <div class='planet-container'>
+        <div class='night'></div>
+        <div class='day'></div>
+        <div class='clouds'></div>
+        <div class='inner-shadow'></div>
+    </div>
+    
+
+    
+    <!--=================== Scripts ================ -->
+    <!-- Start JQuery and Bootstrap JS Import -->
+    <!-- <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script> -->
+    <!-- End JQuery and Bootstrap JS Import -->
+
+    <!-- Start Custom JS -->
+    <script src="./js/scripts.js"></script>
+    <!-- End Custom JS -->
+</body>
+</html>
